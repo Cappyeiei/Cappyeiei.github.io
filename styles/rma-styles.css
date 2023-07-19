@@ -3,6 +3,7 @@ h1 {
     padding: 20px 0;
     color: rgb(43, 0, 255);
     text-shadow: 3px 3px 1px rgb(255, 242, 0);
+    text-align: center;
 
 }
 
@@ -11,6 +12,7 @@ img {
     margin: 0 auto;
     height: auto;
     display: block;
+    margin-bottom: 10px;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
 }
 
 p{
-    color: rgb(151, 96, 24);
+    color: blue;
     text-align: center;
     font-size: 30;
 }
@@ -35,4 +37,14 @@ ul {
 html {
     background-color: rgb(99, 97, 103);
 
+}
+
+li.one{
+    border:dotted coral;
+    border-width: 4px;
+}
+
+li.three{
+    border:dotted coral;
+    border-width: 4px;
 }
