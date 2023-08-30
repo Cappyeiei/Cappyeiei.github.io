@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            background-color: blue;
+            height: 100px;
+            width: 25%;
+            float: left;
+            margin: 5px 0;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Div Element Color Changer</title>
+</head>
+
+<body>
+    <script>
+        const bgChange = () =>
+        "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+        
+        const random = (number) => Math.floor(Math.random() * number);
+        
+        for (let i = 1; i <= 16; i++) {
+            let myDiv = document.createElement("div");
+            document.body.appendChild(myDiv);
+
+        }
+        let divs = document.querySelectorAll("div");
+        
+        for (let i = 0; i < divs.length; i++) {
+            if (i % 2 == 1) {
+                divs[i].onclick = function(e) {
+                    e.target.style.backgroundColor = 'yellow';
+                }
+            } else { 
+                divs[i].onclick = function(e) {
+                    e.target.style.backgroundColor = bgChange();
+                }
+            }
+        }
+    </script>
+</body>
+</html>
